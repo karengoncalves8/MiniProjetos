@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    user-select: none;
+}
+
+body{
+    background-color: rgb(161, 190, 176);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-button{
+    display: flex;
+    background-color: #131313;
+    width: 25%;
+    height: 2.5%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.box{
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border: 15px #131313 solid;
+    border-radius: 2rem;
+    background-color: #383838;
+    box-shadow: inset 0 0 10px #0f0f0fd5;
+    color: aliceblue;
+}
+
+h2{
+    font-weight: 500;
+}
+h1{
+    letter-spacing: 3px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.5);
+    color: rgb(17, 17, 17);
+    letter-spacing: 1px;
+    background-color: rgb(111, 202, 69);
+}
+
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(106, 224, 51);
+}
+
+button:nth-last-child(2){
+    background-color: #d23332;
+}
+
+button:nth-last-child(2):hover{
+    background-color: #f11313;
+}
+
+button:nth-last-child(1){
+    background-color: #4c86c9;
+}
+
+button:nth-last-child(1):hover{
+    background-color: #4798f5;
+}
+
+@media (max-width: 690px){
+    .buttons{
+        flex-direction: column;
+    }
+}
